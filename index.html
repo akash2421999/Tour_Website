@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mySlide{display:none;}
+        </style>
+    <title>Tour website</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <header>
+        <nav class="navigation">
+            <h2 style="color: aliceblue;">Tours</h2>
+            
+            <ul id="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CITY</a></li>
+                    <li><a href="#">TOUR</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">MORE</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                </li>
+            </ul>
+            <div class="main-header">
+                
+                <nav class="search">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </nav>
+                <div class="menu-bar"><span onClick="myFunction()">&#9776;</span></div>
+            </div>
+        </nav>  
+        
+    </header> 
+    
+    <!-- Automatic Slideshow Images -->
+    <div class="slideshow">
+        <div class="mySlide">
+            <img class="img" src="images/New York.jpg" alt="new york image">
+            <h2 class="head">New York</h2>
+            <p class="para">The atmosphere in New York is lorem ipsum.</p>
+        </div>
+        <div class="mySlide">
+            <img class="img" src="images/San Francisco.jpg" alt="new york image">
+            <h2 class="head">San Chicago</h2>
+            <p class="para">Thank you, Chicago - A night we won't forget..</p>
+        </div>
+        <div class="mySlide">
+            <img class="img" src="images/Paris.jpg" alt="new york image">
+            <h2 class="head">The Paris</h2>
+            <p class="para">We had the best time playing at Venice Beach!</p>
+        </div>
+    </div>
+    <div class="wrapper">
+    <div class="main-1">
+        <h1>THE TOUR</h1>
+        <I>We love Tourism</I>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="sub-main-1">
+            <div>
+                <p>Camera Man</p>
+                <img src="images/camra-man1.jpg" alt="camra man">
+            </div>
+            <div>
+                <p>Camera Man</p>
+                <img src="images/camra-man2.jpg" alt="camra man">
+            </div>
+            <div>
+                <p>Camera Man</p>
+                <img src="images/camra-man3.jpg" alt="camra man">
+            </div>
+        </div>
+    </div>
+    <div class="main-2">
+        <h1>TOUR DATES</h1>
+       <p><i>Remember to book your tickets!</i></p>
+        <ul class="tour-dates">
+            <li class="list">September <span class="span">Sold out</span></li>
+            <li class="list">October <span class="span">Sold out</span></li>
+            <li class="list">November <span class="span-2">3 tickets available</span></li>
+        </ul>
+        <div class="sub-main-2">
+            <div>
+                <img src="images/tour1.jpg" alt="tour-image">
+                <div class="tickets">
+                    <h3>New York</h3>
+                    <p class="p-date">Fri 27 Nov 2021</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+            <div>
+                <img src="images/tour2.jpg" alt="tour-image">
+                <div class="tickets">
+                    <h3>Paris</h3>
+                    <p class="p-date">Sat 28 Nov 2021</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+            <div>
+                <img src="images/tour3.jpg" alt="tour-image">
+                <div class="tickets">
+                    <h3>San Francisco</h3>
+                    <p class="p-date">Sun 29 Nov 2021</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-3">
+        <h1>CONTACT</h1>
+        <i>Fan? Drop a note!</i>
+        <div class="sub-main-3">
+            <div class="contact">
+                <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+          <div id="submit"> 
+              <form action="#">
+                  <input class="text" type="text" placeholder="Name" required name="Name">
+                  <input class="email" type="email" placeholder="Email" required name="Email">
+                  <input class="message" type="text" placeholder="Message" required name="Message">
+                  <button class="send" type="submit">SEND</button>
+              </form>
+          </div>
+        </div>
+    </div>
+    <div class="main-4">
+        <img src="images/map.jpg" alt="map">
+    </div>
+</div>
+    <footer>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p> <br><br> CREADED BY <br> SYED TAHIR</p>
+    </footer>
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.querySelectorAll(".mySlide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+
+
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display == "block") 
+        {
+            x.style.display = "none";
+        }
+         else 
+            {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
